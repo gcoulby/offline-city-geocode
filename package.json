@@ -1,0 +1,32 @@
+{
+  "name": "offline-city-geocode",
+  "version": "1.0.0",
+  "description": "A small package for getting an offline reverse geocode at city level",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./build": {
+      "types": "./dist/build.d.ts",
+      "import": "./dist/build.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:index": "node dist/build.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0"
+  },
+  "author": "Graham Coulby",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1"
+}
